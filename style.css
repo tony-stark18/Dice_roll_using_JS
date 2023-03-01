@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bg{
+    height: 80vh;
+    width: 100%;
+    /* background-color: #635985; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container
+{
+    background:linear-gradient(45deg,#c5b4f8,#9588bd);
+    height: 60vh;
+    width: 30%;
+    position: relative;
+    bottom: 5%;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container img
+{
+    background-color: #ffffff;
+    border-radius: 27px;
+    /* margin-top: 50px; */
+    width: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.btn{
+    background-color: #ffffff;
+    border: 3px solid #9588bd;
+    height: 55px;
+    width: 200px;
+    border-radius: 30px;
+    /* padding: 10px 20px; */
+    position: relative;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%,-50%);
+    /* text-align: center; */
+    color: #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+}
+.btn:hover{
+    color: #fff;
+    background:linear-gradient(to right,#c5b4f8,#9588bd);
+    border: 3px solid #fff;
+    transition: all 0.3s;
+    /* transform: translateY(-3px); */
+}
+.btn:active{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.big{
+    transform: scale(1.25);
+    color: rgb(46, 255, 46);
+    transition: all .3s;
+}
+.small{
+    transform: scale(1);
+    color: rgb(255, 255, 255);
+    transition: all .3s;
+}
+.animate{
+    color: rgb(46, 255, 46);
+    animation-name: up;
+    animation-duration: 0.75s;
+    position: relative;
+    /* visibility: hidden; */
+}
+@keyframes up {
+    0%{
+        transform:translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(-30px);
+        opacity: 0;
+    }
+}
